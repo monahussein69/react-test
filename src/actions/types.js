@@ -1,0 +1,23 @@
+export const REGISTER_SUCCESS = "REGISTER_SUCCESS";
+export const REGISTER_FAIL = "REGISTER_FAIL";
+export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
+export const LOGIN_FAIL = "LOGIN_FAIL";
+export const LOGOUT = "LOGOUT";
+
+export const HELPER_ADDED = "HELPER_ADDED";
+export const HELPER_FAIL = "HELPER_FAIL";
+
+export const ROLES_RETURNED = "ROLES_RETURNED";
+export const ROLES_FAIL = "ROLES_FAIL";
+
+export const USERS_RETURNED = "USERS_RETURNED";
+export const USERS_FAIL = "USERS_FAIL";
+
+export const SUBSCRIBE_SUCCESS = "SUBSCRIBE_SUCCESS";
+export const SUBSCRIBE_FAIL = "SUBSCRIBE_FAIL";
+
+export const ADMINS_RETURNED = "ADMINS_RETURNED";
+export const ADMINS_FAIL = "ADMINS_FAIL";
+
+export const SET_MESSAGE = "SET_MESSAGE";
+export const CLEAR_MESSAGE = "CLEAR_MESSAGE";
