@@ -24,7 +24,7 @@ class Profile extends Component {
         <p>
           <strong>Role:</strong> {currentUser.role}
         </p>
-        {currentUser.role == "user" ? (
+        {currentUser.role === "user" ? (
           <div>
             <strong>Stores:</strong>
             <ul>
