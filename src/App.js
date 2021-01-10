@@ -111,27 +111,11 @@ class App extends Component {
                   </Link>
                 </li>
 
-                {currentUser.role === "user" ? (
-                  <li className="nav-item">
-                    <a
-                      href="/user-login"
-                      className="nav-link"
-                      onClick={this.logOut}
-                    >
-                      LogOut
-                    </a>
-                  </li>
-                ) : (
-                  <li className="nav-item">
-                    <a
-                      href="/admin-login"
-                      className="nav-link"
-                      onClick={this.logOut}
-                    >
-                      LogOut
-                    </a>
-                  </li>
-                )}
+                <li className="nav-item">
+                  <a href="/login" className="nav-link" onClick={this.logOut}>
+                    LogOut
+                  </a>
+                </li>
               </div>
             ) : (
               <div className="navbar-nav ml-auto">

@@ -8,13 +8,21 @@ const getUserProfile = () => {
 };
 
 const subscribeToStore = stores => {
-  return axios.post(
-    API_URL + "subscribe_to_store",
-    {
-      stores
-    },
-    { headers: authHeader() }
-  );
+  return axios
+    .post(
+      API_URL + "subscribe_to_store",
+      {
+        stores
+      },
+      { headers: authHeader() }
+    )
+    .then(response => {
+      if (response.data.user && response.data.user.accessToken) {
+        localStorage.setItem("user", JSON.stringify(response.data.user));
+      }
+
+      return response;
+    });
 };
 
 export default {

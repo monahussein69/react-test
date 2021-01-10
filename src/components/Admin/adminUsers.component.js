@@ -58,15 +58,14 @@ class AdminUsers extends Component {
                   <td colSpan={3}>No records added</td>
                 </tr>
               ) : (
-                ""
-              )}
-              {adminUsers &&
-                adminUsers.map(user => (
-                  <tr>
+                adminUsers &&
+                adminUsers.map((user, index) => (
+                  <tr key={index}>
                     <td>{user.username}</td>
                     <td>{user.email}</td>
                   </tr>
-                ))}
+                ))
+              )}
             </tbody>
           </Table>
         )}

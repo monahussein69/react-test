@@ -24,14 +24,19 @@ class Profile extends Component {
         <p>
           <strong>Role:</strong> {currentUser.role}
         </p>
-
-        <strong>Stores:</strong>
-        <ul>
-          {currentUser.stores &&
-            currentUser.stores.map((store, index) => (
-              <li key={index}>{store}</li>
-            ))}
-        </ul>
+        {currentUser.role == "user" ? (
+          <div>
+            <strong>Stores:</strong>
+            <ul>
+              {currentUser.stores &&
+                currentUser.stores.map((store, index) => (
+                  <li key={index}>{store}</li>
+                ))}
+            </ul>
+          </div>
+        ) : (
+          <div></div>
+        )}
       </div>
     );
   }
